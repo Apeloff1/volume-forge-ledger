@@ -1,0 +1,10 @@
+{
+  "lines": 153003200,
+  "files": 200,
+  "bytes": 6057526890,
+  "census": "wc -l emit100/shard_*.py",
+  "stored_prose": 0,
+  "clip": 1.1,
+  "sample_binding_mass": 1.0392,
+  "note": "full shard import OOM; one emitted binding executed"
+}
