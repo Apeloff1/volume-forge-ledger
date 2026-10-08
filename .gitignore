@@ -1,0 +1,5 @@
+emit/
+emit10/
+emit100/
+__pycache__/
+*.pyc

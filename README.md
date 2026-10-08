@@ -1,26 +1,27 @@
 # Volume Forge
 
-Measured volumetric emit for the Skeleton house.
+Source is on main. Generated trees are not.
 
-The delivery is a forge plus a census. Line count is read off disk after emit. It is not stamped.
+## Census
 
-## Law
+- organ emit: 3329408 lines, 2368 files
+- masterplan shards: 15302600 lines, 200 files
+- x10 shards: 153003200 lines, 200 files, 6057526890 bytes
+- stored_prose: 0
+- mass clip: 1.1
+- seed: 8847291
 
-- Mass grows at most prior x 1.1 per step.
-- stored_prose is 0.
-- Era bind carries title, era, citation, url.
-- Pointer clauses only. No sentence store.
-- Census overwrites any estimate.
+Counts are wc after emit. Writer estimates are not law.
 
 ## Compile
 
 ```bash
 python -m volume_forge.emit_cli --out emit --ledger reports/ledger.json
+python -m volume_forge.masterplan emit10
+python -m volume_forge.masterplan_x10 emit100
+wc -l emit100/shard_*.py
 python tests_kernel.py
+python tests_doctor.py
 ```
 
-Another agent compiles by running the emitter, then reading reports/ledger.json. Do not hand-edit emit/. Regenerate it.
-
-Measured close: 3329408 lines, 2368 files, after restoring skeleton/secret.py (one dropped write on the first pass).
-
-The generated tree is not in this repo. It is a regenerate. The zip delivery holds the emit.
+Do not commit emit, emit10, or emit100. Regenerate them.
