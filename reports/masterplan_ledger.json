@@ -1,0 +1,10 @@
+{
+  "stratum": "masterplan",
+  "files": 200,
+  "lines": 15302600,
+  "bytes": 604128090,
+  "census": "wc -l emit10/shard_*.py",
+  "stored_prose": 0,
+  "clip": 1.1,
+  "sample_mass": 1.6272
+}
