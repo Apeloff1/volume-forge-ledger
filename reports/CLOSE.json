@@ -1,0 +1,12 @@
+{
+  "stored_prose": 0,
+  "clip": 1.1,
+  "seed": 8847291,
+  "lines_sealed": 171635208,
+  "files_ok": true,
+  "strata": [
+    {"name": "organ", "files_found": 2368, "lines_sealed": 3329408},
+    {"name": "masterplan", "files_found": 200, "lines_sealed": 15302600},
+    {"name": "x10", "files_found": 200, "lines_sealed": 153003200}
+  ]
+}
