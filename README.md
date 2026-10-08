@@ -1,27 +1,22 @@
 # Volume Forge
 
-Source is on main. Generated trees are not.
+Built on main. No feature branch required.
 
-## Census
+```bash
+python tests_kernel.py
+python tests_doctor.py
+python -m volume_forge
+```
 
-- organ emit: 3329408 lines, 2368 files
-- masterplan shards: 15302600 lines, 200 files
-- x10 shards: 153003200 lines, 200 files, 6057526890 bytes
-- stored_prose: 0
-- mass clip: 1.1
-- seed: 8847291
+Exit 0 means file counts match the seals. Exit 2 means a tree is missing.
 
-Counts are wc after emit. Writer estimates are not law.
+Sealed lines: organ 3329408, masterplan 15302600, x10 153003200. Sum 171635208.
+stored_prose 0. clip 1.1. seed 8847291.
 
-## Compile
+Regenerate trees. Do not commit them.
 
 ```bash
 python -m volume_forge.emit_cli --out emit --ledger reports/ledger.json
 python -m volume_forge.masterplan emit10
 python -m volume_forge.masterplan_x10 emit100
-wc -l emit100/shard_*.py
-python tests_kernel.py
-python tests_doctor.py
 ```
-
-Do not commit emit, emit10, or emit100. Regenerate them.
